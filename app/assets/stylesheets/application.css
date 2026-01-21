@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+ .banner {
+  background: lightgray;
+  padding: 15px;
+  margin-bottom: 10px;
+ }
+
+ .container {
+  padding: 5px;
+ }
+
+ .button-new {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+ }

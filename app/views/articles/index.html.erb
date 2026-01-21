@@ -1,0 +1,13 @@
+
+<h2> Articles </h2>
+
+<button class="btn btn-primary button-new">
+<%= link_to "New Article", articles_new_path %>
+</button>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li> <%= link_to article.title, article_path(article) %> </li>
+    <p> <%= article.content %> </p>
+  <% end %>
+</ul>
