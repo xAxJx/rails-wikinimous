@@ -1,4 +1,6 @@
-<h2> New Article </h2>
+<h2> Editing Article: <%= @article.title %></h2>
+
+<p> <%= @article.content %> </p>
 
 <%= form_with model: @article do |f| %>
   <%= f.label :title %>

@@ -8,21 +8,23 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  # resources :articles
+  resources :articles
 
-  #index
-  get "articles", to: "articles#index"
-  #new
-  get "articles/new", to: "articles#new"
-  #create
-  post "articles", to: "articles#create"
-  #edit
-  get "articles/:id/edit", to: "articles#edit", as: :edit_article
-  #update
-  patch "articles/:id", to: "articles#update"
-  #show
-  get "articles/:id", to: "articles#show", as: :article
-  #destroy
-  delete "articles/:id", to: "articles#destroy"
+  root to: "articles#index"
+
+  # #index
+  # get "articles", to: "articles#index"
+  # #new
+  # get "articles/new", to: "articles#new"
+  # #create
+  # post "articles", to: "articles#create", as: :new_article
+  # #edit
+  # get "articles/:id/edit", to: "articles#edit", as: :edit_article
+  # #update
+  # patch "articles/:id", to: "articles#update"
+  # #show
+  # get "articles/:id", to: "articles#show", as: :article
+  # #destroy
+  # delete "articles/:id", to: "articles#destroy"
 
 end

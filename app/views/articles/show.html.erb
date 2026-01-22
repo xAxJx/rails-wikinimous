@@ -6,4 +6,14 @@
 
 <p> <%= @article.content %> </p>
 
-<%= link_to "Return to Index", articles_path %>
+<button class="btn btn-primary text-decoration-none">
+<%= link_to "Edit Article", edit_article_path(@article), class: "no-blue" %>
+</button>
+
+<button class="btn btn-primary text-decoration-none">
+<%= link_to "Delete Article", article_path(@article), class: "no-blue",
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
+</button>
+
+<p> <%= link_to "Return to Index", articles_path %> </p>

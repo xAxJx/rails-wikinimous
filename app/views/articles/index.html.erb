@@ -1,9 +1,11 @@
 
 <h2> Articles </h2>
 
-<button class="btn btn-primary button-new">
-<%= link_to "New Article", articles_new_path %>
+<div class = "btn">
+<button class="btn btn-primary text-decoration-none">
+<%= link_to "New Article", new_article_path, class: "no-blue"%>
 </button>
+</div>
 
 <ul>
   <% @articles.each do |article| %>
